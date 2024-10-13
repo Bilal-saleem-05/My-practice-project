@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(227, 217, 217);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/* Container styling */
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    height: 700px;
+    margin: 3% auto;
+    border: 3px solid rgba(0, 0, 255, 0.39);
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.619);
+}
+
+/* Header styling */
+#header {
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#AF {
+    background-color: rgb(59, 59, 237);
+    color: whitesmoke;
+    padding: 10px;
+    display: inline-block;
+}
+
+#logo {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    vertical-align: middle;
+}
+
+/* Flexbox for form and file div */
+#content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Form div (80%) */
+#form {
+    height: 500px;
+     border: 1px solid black;
+    flex: 4; /* 4/5th of the container */
+    padding: 10px;
+}
+
+/* File div (20%) */
+#file {
+    border: 1px solid black;
+    flex: 1; /* 1/5th of the container */
+    height: auto;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <img src="images/JAMIA logo.jpg" alt="School logo" height="100px">
+            </div>
+            <div id="AF">
+                <h1>Addmission Form</h1>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Main content: form and file side by side -->
+        <div id="content">
+            <div id="form">
+                <form action="">
+                    
+                    <label for="first Name">First Name:</label>
+                    <input type="text" placeholder="Enter first Name" required>
+                    <br>
+                    <label for="Last Name">Last Name:</label>
+                    <input type="text" placeholder="Enter Last Name" id="last name" required>
+                    <br>
+                    <label for="father Name">Father Name:</label>
+                    <input type="text" placeholder="Enter Father Name" required>
+                    <br>
+                    <label for="Mother Name">Mother Name:</label>
+                    <input type="text" placeholder="Enter Mother Name" required>
+                    <br>
+                    <label for="Date of Birth">Date of Birth(DOB):</label>
+                    <input type="date" required>
+                    <br>
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" name="Gender" required>Male
+                    <input type="radio" name="Gender"required>Female
+                    <input type="radio" name="Gender"required>Other
+                    <br>
+                    <label for="CNIC/B-FORM NO.">Student CNIC/B-FORM NO.</label>
+                    <input type="number" placeholder="(Optional)">
+                    <br>
+                    <label for="Father CNIC No.">Student CNIC/B-FORM NO.</label>
+                    <input type="number" placeholder="required" required>
+                    <br>
+                    
+
+
+                </form>
+            </div>
+
+            <div id="file">
+                <!-- Content for file div (e.g. file upload section) -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
